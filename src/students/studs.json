@@ -1,16 +1,1 @@
-[
-  {
-    "name": "Sexiest",
-    "surname": "Beeast",
-    "Email": "HESTOOSSEXYFORHISSHIRT@bing.com",
-    "DoB": "11/04/1969",
-    "ID": "59dtt6y0kig3w0j1"
-  },
-  {
-    "name": "Sad",
-    "surname": "Beeast",
-    "Email": "HESTOOSSEXYFORHISSHIRT@bing.com",
-    "DoB": "11/04/1969",
-    "ID": "59dtt5m4kig4xn0p"
-  }
-]
+[{"name":"Sexiest","surname":"Beeast","Email":"HESTOOSSEXYFORHISSHIRT@bing.com","DoB":"11/04/1969","ID":"59dtt6y0kig3w0j1"},{"name":"Sad","surname":"Beeast","Email":"HESTOOSSEXYFORHISSHIRT@bing.com","DoB":"11/04/1969","ID":"59dtt5m4kig4xn0p"},{"name":"Sad","surname":"Beeast","Email":"newEmail@bing.com","DoB":"11/04/1969","ID":"59dtt6s0kig6q6p5"},{"name":"Sad","surname":"Beeast","Email":"newNewEmail@bing.com","DoB":"11/04/1969","ID":"59dtt5u8kig6qjgy"}]

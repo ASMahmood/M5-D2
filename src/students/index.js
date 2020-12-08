@@ -39,6 +39,29 @@ router.post("/", (req, res) => {
   res.status(201).send(newStud.ID); //sends json in the response
 });
 
+router.post("/checkEmail", (req, res) => {
+  const studPath = path.join(__dirname, "studs.json"); //creates filepath to json
+  const fileBleepBloop = fs.readFileSync(studPath); //turns file into machine shit
+  const fileString = fileBleepBloop.toString(); //turns machine shit into a string
+  const studArray = JSON.parse(fileString); //turns string into 🎈JASON🎈
+
+  const newStud = req.body;
+  console.log(newStud);
+  console.log(studArray.findIndex((stud) => stud.Email === newStud.Email));
+
+  if (studArray.findIndex((stud) => stud.Email === newStud.Email) === -1) {
+    newStud.ID = uniqid();
+
+    studArray.push(newStud);
+
+    fs.writeFileSync(studPath, JSON.stringify(studArray));
+
+    res.status(201).send("created student"); //sends json in the response
+  } else {
+    res.send("another student has this email"); //sends json in the response
+  }
+});
+
 router.put("/:id", (req, res) => {
   const studPath = path.join(__dirname, "studs.json"); //creates filepath to json
   const fileBleepBloop = fs.readFileSync(studPath); //turns file into machine shit
